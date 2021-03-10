@@ -1,0 +1,52 @@
+// General
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+$bg-cyan : hsl(185, 75%, 39%);
+$dark-blue: hsl(229, 23%, 23%);
+$dark-gray-blue: hsl(227, 10%, 46%);
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+p {
+    color: $dark-gray-blue;
+}
+
+strong {
+    color: $dark-blue;
+}
+
+.bg-cyan {
+    background-color: $bg-cyan;
+}
+
+// Desktop mockup
+@screen lg {
+    .desktop-design {
+        max-width: 1440px;
+        height: 720px;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // z-index: 10000;
+        // background-repeat: no-repeat;
+        // opacity: 1;
+        // background-image: url('../img/design/desktop-design.jpg');
+    }
+}
+
+// Mobile mockup
+@screen sm {
+    .mobile-design {
+        width: 375px;
+        height: 667px;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // z-index: 10000;
+        // background-repeat: no-repeat;
+        // background-image: url('../img/design/mobile-design.jpg');
+        // opacity: .8;
+    }
+}

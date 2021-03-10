@@ -1,0 +1,68 @@
+// Desktop
+@screen lg {
+    .desktop-design > div {
+        // opacity: 0.6;
+        &:before {
+            position: absolute;
+            background-image: url('../img/bg-pattern-top.svg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            content: '';
+            width: calc(200%/3);
+            height: 135%;
+            left: -18.5%;
+            top: -70%;
+        }
+
+        &:after {
+            position: absolute;
+            background-image: url('../img/bg-pattern-bottom.svg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            content: '';
+            width: calc(200%/3);
+            height: 48%;
+            top: 52%;
+            left: 48.25%;
+        }
+
+        .card {
+            height: 52%;
+            width: 24.5%;
+            box-shadow: 0px 15px 50px #2d324894;
+            border-radius: 15px;
+
+            &__top {
+                height: 37.5%;
+                background-image: url('../img/bg-pattern-card.svg');
+                border-radius: 15px 15px 0% 0%;
+
+                img {
+                    border: 5px solid white;
+                    transform: translateY(80%);
+                }
+            }
+
+            &__middle {
+                height: 38.75%;
+
+                p:first-child {
+                    margin-top: 20%;
+                }
+            }
+
+            &__bottom {
+                height: calc(23.75% - 1px);
+                border-radius: 0 0 15px 15px;
+                border-top: 1px solid #ebebeb;
+
+                p {
+                    font-size: 10px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+    }
+}
