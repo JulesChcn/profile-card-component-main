@@ -122648,7 +122648,7 @@ video {
   .desktop-design > div .card {
     height: 52%;
     width: 24.5%;
-    box-shadow: 0px 15px 50px #2d324894;
+    box-shadow: 0px 15px 50px rgba(45, 50, 72, 0.5);
     border-radius: 15px;
   }
 
@@ -122681,6 +122681,10 @@ video {
     font-size: 10px;
     font-weight: 400;
     letter-spacing: 2px;
+  }
+
+  .desktop-design > div .card__bottom p strong {
+    font-size: 18px;
   }
 }
 
