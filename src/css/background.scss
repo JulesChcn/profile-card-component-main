@@ -1,8 +1,8 @@
 // Desktop
 @screen lg {
     .desktop-design > div {
-
         // opacity: 0.6;
+    
         &:before {
             position: absolute;
             background-image: url('../img/bg-pattern-top.svg');

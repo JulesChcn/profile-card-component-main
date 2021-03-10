@@ -1,61 +1,51 @@
-// Desktop
-@screen lg {
-    .desktop-design > div {
+.card {
+    height: 52%;
+    width: 24.5%;
 
-        // opacity: 0.6;
-        .card {
-            height: 52%;
-            width: 24.5%;
-            box-shadow: 0px 15px 50px rgba(#2d3248, 0.5);
-            border-radius: 15px;
-
-            &__top {
-                height: 37.5%;
-                background-image: url('../img/bg-pattern-card.svg');
-                border-radius: 15px 15px 0% 0%;
-
-                img {
-                    border: 5px solid white;
-                    transform: translateY(80%);
-                }
-            }
-
-            &__middle {
-                height: 38.75%;
-
-                p:first-child {
-                    margin-top: 20%;
-                }
-            }
-
-            &__bottom {
-                height: calc(23.75% - 1px);
-                border-radius: 0 0 15px 15px;
-                border-top: 1px solid #ebebeb;
-
-                p {
-                    font-size: 10px;
-                    font-weight: 400;
-                    letter-spacing: 2px;
-
-                    strong {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-
+    // Mobile
+    @screen sm {
+        height: 55.5%;
+        width: 86.5%;
     }
-}
+    //
 
-// Mobile
-@screen sm {
-    .mobile-design > div {
-        // opacity: 0.6;
+    box-shadow: 0px 15px 50px rgba(#2d3248, 0.5);
+    border-radius: 15px;
 
-        .card {
-            height: 55.5%;
-            width: 86.5%;
+    &__top {
+        height: 37.5%;
+        background-image: url('../img/bg-pattern-card.svg');
+        border-radius: 15px 15px 0% 0%;
+
+        img {
+            left: 0;
+            right: 0;
+            bottom: -48px;
+            border: 5px solid white;
+        }
+    }
+
+    &__middle {
+        height: 38.75%;
+
+        p:first-child {
+            margin-top: 20%;
+        }
+    }
+
+    &__bottom {
+        height: calc(23.75% - 1px);
+        border-radius: 0 0 15px 15px;
+        border-top: 1px solid #ebebeb;
+
+        p {
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 2px;
+
+            strong {
+                font-size: 18px;
+            }
         }
     }
 }
