@@ -39,7 +39,7 @@ strong {
 // Mobile mockup
 @screen sm {
     .mobile-design {
-        width: 375px;
+        min-width: 375px;
         height: 667px;
         // position: absolute;
         // top: 0;
