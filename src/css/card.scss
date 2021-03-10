@@ -1,32 +1,8 @@
 // Desktop
 @screen lg {
-    .desktop-design  >div {
+    .desktop-design > div {
 
         // opacity: 0.6;
-        &:before {
-            position: absolute;
-            background-image: url('../img/bg-pattern-top.svg');
-            background-size: 100%;
-            background-repeat: no-repeat;
-            content: '';
-            width: calc(200%/3);
-            height: 135%;
-            left: -18.5%;
-            top: -70%;
-        }
-
-        &:after {
-            position: absolute;
-            background-image: url('../img/bg-pattern-bottom.svg');
-            background-size: 100%;
-            background-repeat: no-repeat;
-            content: '';
-            width: calc(200%/3);
-            height: 48%;
-            top: 52%;
-            left: 48.25%;
-        }
-
         .card {
             height: 52%;
             width: 24.5%;
@@ -69,5 +45,17 @@
             }
         }
 
+    }
+}
+
+// Mobile
+@screen sm {
+    .mobile-design > div {
+        // opacity: 0.6;
+
+        .card {
+            height: 55.5%;
+            width: 86.5%;
+        }
     }
 }

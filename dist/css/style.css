@@ -122644,7 +122644,31 @@ video {
     top: 52%;
     left: 48.25%;
   }
+}
 
+@media (max-width: 639px) {
+  .mobile-design > div:before {
+    position: absolute;
+    background-image: url("../img/bg-pattern-top.svg");
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: -46%;
+    top: -27%;
+  }
+
+  .mobile-design > div:after {
+    position: absolute;
+    background-image: url("../img/bg-pattern-bottom.svg");
+    content: '';
+    width: 157%;
+    height: 100%;
+    top: 54%;
+    left: 44%;
+  }
+}
+
+@media (max-width: 2550px) {
   .desktop-design > div .card {
     height: 52%;
     width: 24.5%;
@@ -122688,6 +122712,13 @@ video {
   }
 }
 
+@media (max-width: 639px) {
+  .mobile-design > div .card {
+    height: 55.5%;
+    width: 86.5%;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 body {
@@ -122718,32 +122749,5 @@ strong {
   .mobile-design {
     width: 375px;
     height: 667px;
-  }
-}
-
-@media (max-width: 639px) {
-  .mobile-design > div:before {
-    position: absolute;
-    background-image: url("../img/bg-pattern-top.svg");
-    content: '';
-    height: 100%;
-    width: 100%;
-    left: -46%;
-    top: -27%;
-  }
-
-  .mobile-design > div:after {
-    position: absolute;
-    background-image: url("../img/bg-pattern-bottom.svg");
-    content: '';
-    width: 157%;
-    height: 100%;
-    top: 54%;
-    left: 44%;
-  }
-
-  .mobile-design > div .card {
-    height: 55.5%;
-    width: 86.5%;
   }
 }
