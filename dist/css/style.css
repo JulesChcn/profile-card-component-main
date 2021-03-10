@@ -122717,6 +122717,7 @@ video {
 
 .card__bottom p strong {
   font-size: 18px;
+  letter-spacing: normal;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
